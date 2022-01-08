@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NISHANT_PRANAY_TRISHIT</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+</head>
+<body ng-app="myapp" ng-controller="ctrlfn">
+    
+<!-- header section starts  -->
+
+<header>
+
+<nav class="navbar">
+    <ul>
+        <li style="--i:1;"><a href="#home">home</a></li>
+        <li style="--i:2;"><a href="#feature">feature</a></li>
+        <li style="--i:3;"><a href="#about">about</a></li>
+        <li style="--i:4;"><a href="#gallery">gallery</a></li>
+        <li style="--i:5;"><a href="#review">review</a></li>
+        <li style="--i:6;"><a href="#contact">contact</a></li>
+    </ul>
+</nav>
+
+<div class="menu"><i class="fas fa-bars"></i></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+<div class="video-container">
+    <video src="images/video.mp4" muted loop autoplay></video>
+</div>
+
+<div class="content">
+
+    <h1>explore.</h1>
+    <h3>its time to travel</h3>
+
+    <div class="form-container">
+
+        <form action="">
+
+            <h3>search your destination</h3>
+
+            <span>location</span>
+            <input type="text" placeholder="place you want to visit">
+
+            <span>guest members</span>
+            <input type="number" placeholder="how many people">
+
+            <span>arrival</span>
+            <input type="date">
+
+            <span>departure</span>
+            <input type="date">
+
+            <input class="btn" type="submit" value="search">
+
+        </form>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- feature section starts  -->
+
+<section class="feature" id="feature">
+
+<h1 class="heading">popular places</h1>
+<h3 class="title">see the most featured places</h3>
+
+<div class="card-container">
+
+    <div class="card">
+        <img src="images/bali_main.jfif" alt="">
+        <div class="info">
+            <h3>Bali</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, minima!</p>
+             <button class="btn" ng-click="baliclicked()">visit now!</button>
+            <!--<a href="./bali.html"><button class="btn">visit now!</button></a>-->
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/rio_main.jfif" alt="">
+        <div class="info">
+            <h3>Rio de Janeiro</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, minima!</p>
+            <button class="btn" ng-click="rioclicked()">visit now!</button>
+            <!--<a href="./rio.html"><button class="btn">visit now!</button></a>-->
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/mald_main.jfif" alt="">
+        <div class="info">
+            <h3>Maldives</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, minima!</p>
+           <button class="btn" ng-click="malclicked()">visit now!</button>
+            <!--<a href="./maldives.html"><button class="btn">visit now!</button></a>-->
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- feature section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+<div class="row">
+    <div class="content">
+        <h3 style="text-align: center;">why choose us?</h3>
+        <p>Attention to Details.A Plan for Success.Creativity.Experts Only.Pricing.Award-Winning</p>
+             </div>
+
+</div>
+
+<div class="box-container">
+
+    <div class="box">
+        <i class="fas fa-map"></i>
+        <h3>travel guide</h3>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-users"></i>
+        <h3>24 x 7 service</h3>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-hotel"></i>
+        <h3>hotel booking</h3>
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+<h1 class="heading">our gallery</h1>
+<h3 class="title">explore the most visited places</h3>
+
+<div class="box-container">
+
+    <div class="box">
+        <div class="image">
+            <img src="images/g1.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Bora Bora Island, French Polynesia </h3>
+            <p>The epitome of romance, Bora Bora is one of the best travel destinations in the World. 
+                This place is known for its luxurious stays and adventurous activities</p>
+            <a href="#"><button class="btn">Visit Now!</button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/g2.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Machu Picchu, Peru – The Sun Gate </h3>
+            <p>This place is popular among tourists as the sunrise from the Sun Gate is simply spectacular. 
+                The hills here proffer one of the most marvelous views of the main square of Machu Picchu, with the sun in the backdrop.</p>
+            <a href="#"><button class="btn">Visit Now!</button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/g3.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Great Barrier Reef, Australia – Great Natural Wonder</h3>
+            <p>The hallmark of this place is ‘lavish’ and ‘beauty’. So if you want to see this grandeur of nature in Australia, 
+                you need to spend money and come & stay at the most luxurious places the Reef has to offer. </p>
+            <a href="#"><button class="btn">Visit Now!</button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/g4.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Bangkok, Thailand</h3>
+            <p>With lots of floating markets and perfect nightlife, you are about to have the best time of your life at this amazing place.
+                 With ladyboys and temples, the place is a unique blend of urban spiritual life. </p>
+            <a href="#"><button class="btn">visit now!</button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/g5.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Cappadocia, Turkey</h3>
+            <p>This amazing place in Turkey offers a breathtaking view that words would fall short when we begin to explain it.
+                 Coming to Cappadocia’s you realize that everything done by nature has its own beauty.</p>
+            <a href="#"><button class="btn">visit now!</button></a>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- gallery section ends -->
+
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+<h1 class="heading">Customer Reviews</h1>
+<h3 class="title">What people say about their trip</h3>
+
+
+<div class="box-container">
+
+    <div class="box">
+        <i class="fas fa-quote-left"></i>
+        <p>The Balinese people are such genuine & sincere people & willing to do anything for you . Love the markets & the beaches.</p>
+        <div class="user">
+            <img src="images/user2.png" alt="">
+            <div class="info">
+                <h3>Melissa , Aus</h3>
+                <span>Jan 5, 2021</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-quote-left"></i>
+        <p>Great place to escape. Perfect location to live the exotic island life. Great place to do all sorts of water sports (surf, dive , snorkel etc).</p>
+        <div class="user">
+            <img src="images/user2.png" alt="">
+            <div class="info">
+                <h3>Ritika , Ind</h3>
+                <span>Mar 23, 2021</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-quote-left"></i>
+        <p>Loved how many cafes there are that cater to Plantbased eating and the coffee has improved a lot . So many fantastic restaurants.</p>
+        <div class="user">
+            <img src="images/user.jfif" alt="">
+            <div class="info">
+                <h3>Paul , UK</h3>
+                <span>Aug 9, 2021</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- newsletter section stars  -->
+
+<section class="newsletter">
+
+<div class="box">
+    <h1>sign up for discount</h1>
+    <p>get in touch with us and get latest updates</p>
+
+    <form action="">
+        <input type="email" placeholder="enter your email">
+        <input type="submit" class="btn" value="send">
+    </form>
+</div>
+
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading">contact us</h1>
+<h3 class="title">book your tickets now</h3>
+
+
+    <form method="post" action="/addname" name="form2"  novalidate>
+<div class="inputBox">
+    <div class="inputBox"> 
+        <span style="font-size: large; color:red; " ng-show="form2.firstName.$dirty">
+            <span ng-show="form2.firstName.$error.pattern">invalid Firstname</span>
+        </span>  
+    </div>
+    <input type="text" placeholder="first name" name="firstName" ng-model="firstName" ng-pattern="fn">
+    <input type="text" placeholder="last name" name="lastName">
+</div>
+<div class="inputBox">
+
+    <div class="inputBox">
+        
+        <span style="font-size: large; color:red; " ng-show="form2.email.$dirty">
+            <span ng-show="form2.email.$error.pattern">invalid email</span>
+        </span>
+    </div>
+    <input style="text-transform: none;" type="email" placeholder="email" name="email" ng-model="email" ng-pattern="em">
+
+    <input type="number" placeholder="phone" name="phone" ng-model="phone" ng-pattern="p">
+
+    <span style="font-size: large; color:red; " ng-show="form2.phone.$dirty">
+        <span ng-show="form2.phone.$error.pattern">invalid contact no</span>
+    </span>
+    
+</div>
+
+
+<textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+
+<input type="submit" value="message" class="btn">
+
+
+</form>
+   <!---- <form method="post" action="/addname">
+<div class="inputBox">
+    <input type="text" name="firstName" placeholder="first name">
+    <input type="text" name="lastName" placeholder="last name">
+</div>
+
+<div class="inputBox">
+    <input type="email" name="email" placeholder="email">
+    <input type="number" name="phone" placeholder="phone">
+</div>
+
+
+<textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+
+<input type="submit" value="message" class="btn">
+
+
+</form>-->
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+<div class="box">
+    <h3>explore.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit quo ex rem repellendus voluptatem odit repellat itaque dignissimos ad?</p>
+</div>
+
+<div class="box">
+    <h3>share</h3>
+    <a href="#">facebook</a>
+    <a href="#">twitter</a>
+    <a href="#">instagram</a>
+    <a href="#">github</a>
+</div>
+
+<div class="box">
+    <h3>links</h3>
+    <a href="#">home</a>
+    <a href="#">feature</a>
+    <a href="#">about</a>
+    <a href="#">gallery</a>
+    <a href="#">review</a>
+    <a href="#">contact</a>
+</div>
+
+<h1 class="credit">Made with <span>&#10084;</span> | By <span>Nishant , Pranay & Trishit</span> | All rights reserved. </h1>
+
+</section>
+<!-- footer section ends -->
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="logic.js"></script>
+
+</body>
+</html>

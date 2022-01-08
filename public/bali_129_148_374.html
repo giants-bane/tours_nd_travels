@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<title>Bali</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: 'Roboto', sans-serif;}
+:root{
+  --red:#EE3623;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+.box{
+    display: flex;
+    width:200%;
+    margin-top: 50px;
+}
+.img{
+    margin-right: 30px;
+}
+#hd{
+    color: #EE3623;
+}
+.btn{
+  height:3.5rem;
+  width: 15rem;
+  background: var(--red);
+  color:#fff;
+  border-radius: .5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin:1rem 0;
+  box-shadow: 0 .3rem .5rem var(--red);
+  opacity: .7;
+}
+
+.btn:hover{
+  opacity: 1;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="btn">Popular Places</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="btn">About</a>
+      <a href="#menu" class="btn">Menu</a>
+      <a href="#contact" class="btn">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="images/bali_1.jpg"  width="100%">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity" style="color:white;">
+    <h1 class="w3-xxlarge">Bali</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="images/about_bali.jfif" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center" id="hd">About Bali</h1><br>
+      <p class="w3-large">Just one of many beautiful tropical islands that combine to make up Indonesia, Bali is full of
+           stunning locations, rich culture & exciting activities. Considered the jewel of South East Asia, Bali's mix of
+            world renowned surf spots, endless rice paddies and secrets off the beaten path all make backpacking in Bali an adventure not 
+            to be missed.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+          Packages range from INR 45100 for 3 Nights / 4 Days to INR 57400 for 5 Nights / 6 Days</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+        <h1 class="w3-center" id="hd">Places To Visit</h1><br>
+        <div class="box">
+            <div>
+      <h4>Pura Tanah Lot</h4>
+      <p class="w3-text-grey"> Pura Tanah Lot ("Pura" means temple in Balinese) is one of Bali's most iconic temples.
+          Its spectacular seaside setting, on a rocky islet surrounded by crashing waves wows all who visit.
+        For the Balinese people, it is one of the most sacred of all the island's sea temples.
+        Find way through a labyrinth of lanes lined by souvenir sellers to watch the sun setting behind the temple.</p><br>
+    </div>
+      <div class="img">
+        <img src="images/bp1.jpg" style="width:110%"> 
+      </div>
+    </div>
+    <div class="box">
+        <div class="img">
+            <img src="images/bp2.jpg" style="width:110%"> 
+          </div>
+    <div>
+      <h4>Mount Batur</h4>
+      <p class="w3-text-grey">In Bali's predawn darkness, begin the trek up the 1,700-meter summit 
+          of Mount Batur to watch the sun rise above the lush mosaic of mist-shrouded mountains and the caldera far below.
+          The views are spectacular, stretching all the way across the Batur caldera; the surrounding mountain range; 
+          and beautiful Lake Batur, the island's main source of irrigation water.</p><br>
+    </div>
+</div>
+<div class="box">
+    <div>
+      <h4>Ubud Monkey Forest</h4>
+      <p class="w3-text-grey">Visiting the Sacred Monkey Forest Sanctuary, is one of the top things to do if you're an animal lover. 
+        Entertaining troops of grey long-tailed macaques make their home here .
+        Paved pathways lead through thick forests of giant banyan and nutmeg trees, 
+        where moss-covered statues and ancient temples loom through the dense foliage, imparting an almost mystical feel.</p><br>
+    </div>
+    <div class="img">
+        <img src="images/bp3.jpg" style="width:110%"> 
+      </div>
+</div>
+<div class="box">
+    <div class="img">
+        <img src="images/bp4.jpg" style="width:110%"> 
+      </div>
+    <div>
+      <h4>Tegallalang and Jatiluwih Rice Terraces</h4>
+      <p class="w3-text-grey">Tegallalang Rice Terraces are one of the most famous 
+          areas to photograph these iconic landscapes and absorb their timeless beauty.
+          The Jatiluwih rice terraces cover more than 600 hectares of rice fields along the hillsides of the Batukaru mountain range
+          Both of these locations use UNESCO-recognized irrigation system that dates to the 9th century.</p><br>
+    </div>
+</div>
+<div class="box">
+    <div>
+      <h4>Seminyak Shopping</h4>
+      <p class="w3-text-grey">Bali is known for its flamboyant designers and fabulous shopping, 
+          and you'll find the best examples of Balinese design along the busy streets of Seminyak. 
+          Cutting-edge designer fashion, surf and swimwear, jewelry, furniture, and homewares are just some of the
+          items you can buy at the chic shops and busy market stalls here.</p>    
+    </div>
+    <div class="img">
+        <img src="images/bp5.jpg" style="width:110%"> 
+      </div>
+</div>
+</div>
+  </div>
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center" id="hd">Things to Do</h1><br>
+      <div class="box">
+      <div class="text">
+      <h4>Catch the Beachy Vibe at Nusa Penida Island</h4>
+      <p class="w3-text-grey">A lesser travelled Nusa Penida is the place to come if you are looking for tranquillity and natural beauty. 
+          The island has some excellent dive sites which offer the opportunity to swim amidst manta rays,
+           Mola-Mola fish, whale sharks and coral. You can also opt for snorkelling or simply sunbathe on the white-sand beaches.</p><br>
+      </div>
+      <div class="img">
+        <img src="images/bt1.jpg" style="width:110%"> 
+      </div>
+    </div>
+    <div class="box">
+        <div class="img">
+            <img src="images/bt2.jpg" style="width:85%">
+        </div>
+    <div class="text">
+        <h4>Experience the Thrill of Muck Diving at Padang Bai</h4>
+      <p class="w3-text-grey">Padang Bai in Bali offers excellent opportunities to certified divers who want to try micro-photography, 
+          muck diving and night dives at the place. The area has diverse marine life which lends itself wonderfully 
+          to underwater photography.</p><br>
+    </div>
+</div>
+    <div class="box">
+        <div class="text">
+      <h4>Ride a Jetpack in Tanjung Benoa</h4>
+      <p class="w3-text-grey">There is no better place 
+          to find jetpacks or flyboards than at Bali’s ‘watersports playground’ Tanjung Benoa.
+           You can levitate on these jetpacks as high as up to 15 meters above the water level. 
+           You can also perform various manoeuvres like diving, breaching. 
+            Each ride lasts about 15 minutes along the coastline, allowing you to take satiate the water-enthusiast in you.</p><br>
+        </div>
+            <div class="img">
+                <img src="images/bt3.webp" style="width:120%">
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="images/bt4.jpg" style="width:95%">
+            </div>
+        <div class="text">
+      <h4>Memorable Kintamani Cycling Tour in Bali</h4>
+      <p class="w3-text-grey">This isn't just a cycling tour but a total fun experience that takes you through the
+           jaw-dropping hamlet of Kintamani, offering the best views of the crystalline Lake Batur.
+           Adding to the fun are the views of the rice fields which are terraced to let you soak in its phenomenal beauty. </p><br>
+    </div>
+</div>
+    <div class="box">
+    <div class="text">
+      <h4>Swoosh on the Bali Swing</h4>
+      <p class="w3-text-grey">Melt your heart away with the breathtakingly beautiful views of the entire island with the exclusive version of Bali adventure tours, the Bali swing.
+        You might have dreamt about swinging in between the clouds, but this is the place where you can live your dream and take a bird's eye view of the city. Ranging from 10 to as high as 78 meters, here you can select the swing height and enjoy the Instagram worthy spot of Bali.</p>    
+    </div>
+        <div class="img">
+            <img src="images/bt5.jpg" style="width:125%">
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+     <center><a href="index.html"><button class="btn">BOOK NOW !</button></a></center> 
+  </div>
+  
+<!-- End page content -->
+</div>
+</body>
+</html>
