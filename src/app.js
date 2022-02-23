@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const port=process.env.PORT || 3000;
+const port=process.env.PORT || 80;
 
 const mongoose=require("mongoose");
 mongoose.Promise = global.Promise;
